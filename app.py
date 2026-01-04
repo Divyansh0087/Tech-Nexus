@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 st.set_page_config(page_title="Tech-Nexus", layout="wide")
 
-st.title("🚀 Tech-Nexus")
+st.title("Tech-Nexus")
 st.caption("From research → code → startups, in one place")
 
 # ---------- TechCrunch ----------
@@ -18,7 +18,7 @@ def get_techcrunch():
 def get_arxiv():
     client = arxiv.Client()
     search = arxiv.Search(
-        query="cat:cs.AI",
+        query="LLM inference OR AI chips",
         max_results=3,
         sort_by=arxiv.SortCriterion.SubmittedDate
     )
